@@ -19,6 +19,12 @@ group :development do
   gem 'heroku'
 end
 
+group :test do
+  gem "cucumber-rails", "~> 1.0.2"
+  gem "capybara", "~> 1.0.1"
+  gem "selenium-webdriver", "~> 2.5.0"
+end
+
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails'
