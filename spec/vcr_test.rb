@@ -1,4 +1,4 @@
-require 'test_helper'
+require 'vcr_helper'
 
 describe 'IANA' do
   it "returns example domains" do

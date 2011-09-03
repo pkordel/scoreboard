@@ -26,7 +26,6 @@ group :test do
   gem "selenium-webdriver", "~> 2.5.0"
   gem "database_cleaner", "~> 0.6.7"
   gem "vcr", "~> 1.11.3"
-  gem "fakeweb", "~> 1.3.0"
   gem "typhoeus", "~> 0.2.4"
 end
 

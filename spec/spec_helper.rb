@@ -2,15 +2,11 @@
 ENV["RAILS_ENV"] ||= 'test'
 require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
+require 'vcr_helper'
 
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.
 Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
-
-VCR.config do |c|
-  c.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
-  c.stub_with :fakeweb 
-end
 
 RSpec.configure do |config|
   # == Mock Framework
