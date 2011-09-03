@@ -1,6 +1,6 @@
 require 'typhoeus'
 
-Given /^I request "([^"]*)"$/ do |url|
+When /^a request is made to "([^"]*)"$/ do |url|
   @response = Typhoeus::Request.get(url)
 end
 

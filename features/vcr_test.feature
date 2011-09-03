@@ -4,5 +4,5 @@ Feature: VCR test
   
   @vcr
   Scenario: Check the response
-    Given I request "http://www.iana.org/domains/example/"
+    Given a request is made to "http://www.iana.org/domains/example/"
     Then the response should match "Example Domains"
