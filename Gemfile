@@ -17,6 +17,7 @@ gem 'jquery-rails'
 
 group :development do
   gem 'heroku'
+  gem "foreman", "~> 0.20.0"
 end
 
 group :test do
@@ -24,10 +25,14 @@ group :test do
   gem "capybara", "~> 1.0.1"
   gem "selenium-webdriver", "~> 2.5.0"
   gem "database_cleaner", "~> 0.6.7"
+  gem "vcr", "~> 1.11.3"
+  gem "fakeweb", "~> 1.3.0"
+  gem "typhoeus", "~> 0.2.4"
 end
 
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails'
+  gem "timecop", "~> 0.3.5"
 end
 
