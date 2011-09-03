@@ -1,4 +1,6 @@
-require 'vcr_helper'
+require 'vcr'
+require 'typhoeus'
+require 'vcr_config'
 
 describe 'IANA' do
   it "returns example domains" do

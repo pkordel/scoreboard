@@ -1,6 +1,3 @@
-require 'vcr'
-require 'typhoeus'
-
 VCR.config do |c|
   c.stub_with :typhoeus
   c.cassette_library_dir     = 'spec/fixtures/cassettes'
