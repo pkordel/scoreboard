@@ -1,11 +1,11 @@
 require 'vcr_config'
 
-describe 'IANA' do
+describe 'iana' do
   def make_http_request
     Typhoeus::Request.get('http://www.iana.org/domains/example/').body
   end
   
-  context "iana" do
+  context "get list of example domains" do
     use_vcr_cassette
     
     it "returns example domains" do
