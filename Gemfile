@@ -18,6 +18,8 @@ gem 'jquery-rails'
 group :development do
   gem 'heroku'
   gem "foreman", "~> 0.20.0"
+  gem 'pry'
+  gem 'pry-doc'
 end
 
 group :test do
